@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RoyalScent – Perfumy Premium</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+}
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+}
+.hero{
+    background:url('https://images.unsplash.com/photo-1595429035839-c99c298ffdde') center/cover;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+.hero h1{
+    font-size:40px;
+}
+.btn{
+    background:gold;
+    padding:12px 25px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    border-radius:5px;
+}
+.products{
+    padding:40px 20px;
+    text-align:center;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+.price{
+    color:green;
+    font-size:20px;
+    margin:10px 0;
+}
+button{
+    padding:10px 15px;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+RoyalScent – Perfumy Premium
+</header>
+
+<section class="hero">
+<h1>Luksusowe zapachy w najlepszej cenie</h1>
+<a href="#produkty" class="btn">Zobacz ofertę</a>
+</section>
+
+<section class="products" id="produkty">
+<h2>Nasze bestsellery</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539">
+<h3>Arabian Night 100ml</h3>
+<p>Intensywny orientalny zapach dla mężczyzn.</p>
+<div class="price">129 zł</div>
+<button onclick="buy()">Kup teraz</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
+<h3>Velvet Rose 100ml</h3>
+<p>Zmysłowa kompozycja kwiatowo-ambrowa.</p>
+<div class="price">119 zł</div>
+<button onclick="buy()">Kup teraz</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+<h3>Midnight Gold 100ml</h3>
+<p>Elegancki zapach unisex o dużej trwałości.</p>
+<div class="price">139 zł</div>
+<button onclick="buy()">Kup teraz</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 RoyalScent | Darmowa dostawa od 199 zł
+</footer>
+
+<script>
+function buy(){
+    window.location.href="https://allegro.pl/";
+}
+</script>
+
+</body>
+</html>
